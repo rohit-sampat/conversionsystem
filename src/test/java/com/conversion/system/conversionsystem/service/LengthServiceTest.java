@@ -27,6 +27,6 @@ public class LengthServiceTest {
 
     @Test
     public void when_convertingToImperial_expect_theCorrectMileEquivalent() {
-        assertEquals(-1.00, lengthService.convertToImperial(1.61));
+        assertEquals(1.00, lengthService.convertToImperial(1.61));
     }
 }
