@@ -1,7 +1,8 @@
 # conversionsystem
 Conversion System converts Metric to Imperial and vice versa 
-URL: - http://localhost:80/change/temperature/metric/32
-            http://localhost:80/change/temperature/imperial/45.154
+URL: - 1. http://localhost:80/change/temperature/metric/32
+
+2. http://localhost:80/change/temperature/imperial/45.154
 To Run from eclipse – right click on ConversionsystemApplication.java file and run as java application
 runs on 80 port (if you need to change the port, please change application.properties which is inside the sr/main/resources folder).
 server.port=80
@@ -14,7 +15,7 @@ Tech Stack
 6. Docker file is in base location - docker run cmd to
 7. using Tomcat server which is by-default in built server provided by spring boot
 Functionality
-1. Temperature - Convert Fehrenheit to Celsius & Celsius to Fehrenheit
-2. Length - Convert Mile to KM & KM to Mile
-3. Weight - Convert pound to KG & KG to Pound
+1. Temperature - Convert Fehrenheit to Celsius -> http://localhost:80/change/temperature/metric/32  **AND**  Celsius to Fehrenheit -> http://localhost:80/change/temperature/imperial/45
+2. Length - Convert Mile to KM -> http://localhost/change/length/metric/1 **AND** KM to Mile -> http://localhost/change/length/imperial/1
+3. Weight - Convert pound to KG -> http://localhost:80/change/weight/metric/1 **AND** KG to Pound -> http://localhost:80/change/weight/imperial/1
 (We can add more conversion by adding services into conversionservice package)
